@@ -279,3 +279,25 @@ public class FunctionExample {
     }
 }
 ```
+
+### What are Higher-order Functions?
+
+Higher-order functions are functions that either take other 
+functions as parameters or return functions as their results. 
+They enable more concise and abstract code that can be reused in 
+multiple contexts.
+
+```java
+public class FunctionExample {
+    public static void main(String[] args) {
+        Function<Integer, Integer> applyTwice = x -> x * 2;
+
+        Consumer<Function<Integer, Integer>> printResult = f -> {
+            int result = f.apply(5);
+            System.out.println(result);
+        };
+
+        printResult.accept(applyTwice); // Output: 10
+    }
+}
+```

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="functions as an argument">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnFunction/ExampleOne/FunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnFunction/ExampleOne/VoidFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnFunction/ExampleTwo/FunctionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="function returns a function">
+      <change afterPath="$PROJECT_DIR$/src/main/java/higherOrderFunctions/exampleOne/FunctionExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,20 +69,7 @@
       <recent name="ReturnFunction.ExampleOne" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReturnFunction.ExampleTwo.FunctionExample">
-    <configuration name="CustomFunctionInterface.ExampleTwo.FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CustomFunctionInterface.ExampleTwo.FunctionExample" />
-      <module name="functional_programming_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CustomFunctionInterface.ExampleTwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.FunctionExample">
     <configuration name="FunctionAsArgument.ExampleOne.FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FunctionAsArgument.ExampleOne.FunctionExample" />
       <module name="functional_programming_java" />
@@ -105,6 +89,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="FunctionAsArgument.ExampleTwo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="higherOrderFunctions.exampleOne.FunctionExample" />
+      <module name="functional_programming_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="higherOrderFunctions.exampleOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FunctionExample" />
         <item itemvalue="Application.ReturnFunction.ExampleTwo.FunctionExample" />
         <item itemvalue="Application.ReturnFunction.ExampleOne.FunctionExample" />
         <item itemvalue="Application.FunctionAsArgument.ExampleTwo.FunctionExample" />
         <item itemvalue="Application.FunctionAsArgument.ExampleOne.FunctionExample" />
-        <item itemvalue="Application.CustomFunctionInterface.ExampleTwo.FunctionExample" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682576727457</updated>
-      <workItem from="1682576728333" duration="9928000" />
+      <workItem from="1682576728333" duration="11521000" />
     </task>
     <task id="LOCAL-00001" summary="FAQ Readme">
       <created>1682578172619</created>
@@ -214,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682588574109</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="function returns a function">
+      <created>1682589702576</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682589702576</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +243,7 @@
     <MESSAGE value="lambdas in java" />
     <MESSAGE value="write a custom Function interface" />
     <MESSAGE value="functions as an argument" />
-    <option name="LAST_COMMIT_MESSAGE" value="functions as an argument" />
+    <MESSAGE value="function returns a function" />
+    <option name="LAST_COMMIT_MESSAGE" value="function returns a function" />
   </component>
 </project>
