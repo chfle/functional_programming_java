@@ -140,3 +140,42 @@ public class LambdaExample {
     }
 }
 ```
+
+### How can we use a function with more than 3 arguments or with 0 arguments?
+
+We can define such a functional interface with multiple type parameters, as there is no built-in type for it.
+
+Example 1
+
+```java
+@FunctionalInterface
+public interface TriFunction<T, U, V, R> {
+    R apply(T t, U u, V v);
+}
+
+public class FunctionExample {
+    public static void main(String[] args) {
+        TriFunction<Integer, Integer, Integer, Integer> add3 = (x, y, z) -> x + y + z;
+        Integer result = add3.apply(1, 2, 3);
+
+        System.out.println(result);
+    }
+}
+```
+
+Example 2
+
+```java
+@FunctionalInterface
+public interface VoidFunction<R>{
+    R apply();
+}
+
+public class FunctionExample {
+    public static void main(String[] args) {
+        VoidFunction<String> sayHello = () -> "Hello";
+        String result = sayHello.apply();
+        System.out.println(result);
+    }
+}
+```
