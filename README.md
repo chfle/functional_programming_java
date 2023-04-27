@@ -82,3 +82,35 @@ public class PureFunctionExample {
     }
 }
 ```
+
+### What are First-Class functions?
+
+In programming, first-class functions refer to the ability of a 
+programming language to treat functions as first-class citizens,
+which means that functions can be treated like any other variable 
+or data type. This means that functions can be assigned to variables, 
+passed as arguments to other functions, and returned as values from 
+functions.
+
+Example 1
+
+```java
+package firstClassFunctions.ExampleOne;
+
+import java.util.function.Function;
+
+public class FirstClassFunctionExample {
+    protected static class SimpleMath {
+        public static Integer multiplyByThree(Integer x) {
+            return x * 3;
+        }
+    }
+    public static void main(String[] args) {
+        Function<Integer, Integer> simpleAdd = SimpleMath::multiplyByThree;
+        Integer x = 2;
+        
+        // In order to utilize the function, you must make use of the apply method.
+        System.out.println(simpleAdd.apply(3));
+    }
+}
+```
