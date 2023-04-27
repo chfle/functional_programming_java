@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="lambdas in java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomFunctionInterface/ExampleOne/FunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomFunctionInterface/ExampleOne/TriFunction.java" afterDir="false" />
+    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="write a custom Function interface">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FunctionAsArgument/ExampleOne/FunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FunctionAsArgument/ExampleTwo/FunctionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +68,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomFunctionInterface.ExampleTwo.FunctionExample">
+  <component name="RunManager" selected="Application.FunctionAsArgument.ExampleTwo.FunctionExample">
     <configuration name="CustomFunctionInterface.ExampleTwo.FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CustomFunctionInterface.ExampleTwo.FunctionExample" />
       <module name="functional_programming_java" />
@@ -81,12 +82,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstClassFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firstClassFunctions.ExampleOne.FirstClassFunctionExample" />
+    <configuration name="FunctionAsArgument.ExampleOne.FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionAsArgument.ExampleOne.FunctionExample" />
       <module name="functional_programming_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="firstClassFunctions.ExampleOne.*" />
+          <option name="PATTERN" value="FunctionAsArgument.ExampleOne.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionAsArgument.ExampleTwo.FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionAsArgument.ExampleTwo.FunctionExample" />
+      <module name="functional_programming_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FunctionAsArgument.ExampleTwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,26 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PureFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pureFunctions.ExampleTwo.PureFunctionExample" />
-      <module name="functional_programming_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pureFunctions.ExampleTwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FunctionAsArgument.ExampleTwo.FunctionExample" />
+        <item itemvalue="Application.FunctionAsArgument.ExampleOne.FunctionExample" />
         <item itemvalue="Application.CustomFunctionInterface.ExampleTwo.FunctionExample" />
         <item itemvalue="Application.FunctionExample" />
         <item itemvalue="Application.LambdaExample" />
-        <item itemvalue="Application.FirstClassFunctionExample" />
-        <item itemvalue="Application.PureFunctionExample" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682576727457</updated>
-      <workItem from="1682576728333" duration="6770000" />
+      <workItem from="1682576728333" duration="8255000" />
     </task>
     <task id="LOCAL-00001" summary="FAQ Readme">
       <created>1682578172619</created>
@@ -188,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682585761926</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="write a custom Function interface">
+      <created>1682586649065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682586649065</updated>
+    </task>
+    <task id="LOCAL-00007" summary="write a custom Function interface">
+      <created>1682586693050</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682586693050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +215,7 @@
     <MESSAGE value="remove main" />
     <MESSAGE value="first class functions" />
     <MESSAGE value="lambdas in java" />
-    <option name="LAST_COMMIT_MESSAGE" value="lambdas in java" />
+    <MESSAGE value="write a custom Function interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="write a custom Function interface" />
   </component>
 </project>

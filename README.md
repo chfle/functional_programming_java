@@ -179,3 +179,73 @@ public class FunctionExample {
     }
 }
 ```
+
+### How can we use functions as an arguments?
+
+Example 1
+
+```java
+package FunctionAsArgument.ExampleOne;
+
+public class FunctionExample {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(100);
+
+        Function<Integer, Integer> square = n -> n * n;
+
+        ArrayList<Integer> squaredNumbers = map(numbers, square);
+
+
+        System.out.println(squaredNumbers);
+    }
+
+    public static ArrayList<Integer> map(ArrayList<Integer> numbers, Function<Integer, Integer> func) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (Integer number : numbers) {
+            result.add(func.apply(number));
+        }
+        return result;
+    }
+}
+```
+
+Example 2
+
+```java
+public class FunctionExample {
+    public static void main(String[] args) {
+
+        String result = Processor.process(new Processor() {
+            @Override
+            public String apply(String input) {
+                return input.toLowerCase().replaceAll("\\s", "");
+            }
+
+            @Override
+            public String process(String input) {
+                return apply(apply(input));
+            }
+
+        }, "Christian Lehnert was here, Hiiii");
+
+        System.out.println(result);
+    }
+
+    private interface Processor {
+        String apply(String input);
+
+        String process(String input);
+
+        static String process(Processor p, String input) {
+            return p.process(input);
+        }
+    }
+}
+```
