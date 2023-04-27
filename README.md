@@ -249,3 +249,33 @@ public class FunctionExample {
     }
 }
 ```
+
+### How to use a function as a return type
+
+Example 1
+
+```java
+public class FunctionExample {
+    public static void main(String[] args) {
+        VoidFunction<VoidFunction<String>> greet = () -> () -> "Hello";
+
+        System.out.println(greet.apply().apply());
+    }
+}
+```
+
+Example 2
+
+```java
+public class FunctionExample {
+    public static void main(String[] args) {
+        Function<Integer, Function<Integer, Integer>> xMultiply = times -> x -> x * times;
+
+        Function<Integer, Integer> timesFour = xMultiply.apply(4);
+        System.out.println(timesFour.apply(10));
+
+        Function<Integer, Integer> timesThree = xMultiply.apply(3);
+        System.out.println(timesThree.apply(10));
+    }
+}
+```
