@@ -141,7 +141,7 @@ public class LambdaExample {
 }
 ```
 
-### How can we use a function with more than 3 arguments or with 0 arguments?
+### How can we use a function with more than 2 arguments or with 0 arguments?
 
 We can define such a functional interface with multiple type parameters, as there is no built-in type for it.
 
