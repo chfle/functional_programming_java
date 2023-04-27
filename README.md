@@ -95,10 +95,6 @@ functions.
 Example 1
 
 ```java
-package firstClassFunctions.ExampleOne;
-
-import java.util.function.Function;
-
 public class FirstClassFunctionExample {
     protected static class SimpleMath {
         public static Integer multiplyByThree(Integer x) {
@@ -111,6 +107,36 @@ public class FirstClassFunctionExample {
         
         // In order to utilize the function, you must make use of the apply method.
         System.out.println(simpleAdd.apply(3));
+    }
+}
+```
+
+### How can we define a function without a class?
+
+We can define a function without a class by using lambdas
+
+Example 1
+
+```java
+public class LambdaExample {
+    public static void main(String[] args) {
+        Function<Integer, Integer> someFunction = x -> x + 2;
+        Integer result = someFunction.apply(2);
+        System.out.println(result);
+    }
+}
+```
+
+Example 2
+
+```java
+public class LambdaExample {
+
+    public static void main(String[] args) {
+        BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+
+        int sum = add.apply(5, 10);
+        System.out.println("The sum is: " + sum);
     }
 }
 ```

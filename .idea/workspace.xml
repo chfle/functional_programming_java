@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="remove main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/firstClassFunctions/ExampleOne/FirstClassFunctionExample.java" afterDir="false" />
+    <list default="true" id="1770e176-1f16-4ed9-b415-a5bdf8e33684" name="Changes" comment="first class functions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambda/ExampleOne/LambdaExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +65,26 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FirstClassFunctionExample">
+  <component name="RunManager" selected="Application.LambdaExample">
     <configuration name="FirstClassFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="firstClassFunctions.ExampleOne.FirstClassFunctionExample" />
       <module name="functional_programming_java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="firstClassFunctions.ExampleOne.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambda.ExampleOne.LambdaExample" />
+      <module name="functional_programming_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.ExampleOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaExample" />
         <item itemvalue="Application.FirstClassFunctionExample" />
         <item itemvalue="Application.PureFunctionExample" />
         <item itemvalue="Application.Main" />
@@ -115,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682576727457</updated>
-      <workItem from="1682576728333" duration="4537000" />
+      <workItem from="1682576728333" duration="5771000" />
     </task>
     <task id="LOCAL-00001" summary="FAQ Readme">
       <created>1682578172619</created>
@@ -138,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682582793955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first class functions">
+      <created>1682584280844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682584280844</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +169,7 @@
     <MESSAGE value="FAQ Readme" />
     <MESSAGE value="pure functions" />
     <MESSAGE value="remove main" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove main" />
+    <MESSAGE value="first class functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="first class functions" />
   </component>
 </project>
